@@ -1,0 +1,22 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* background-color: #f0f8ff; */
+    background-color: #23994b;
+    /* Light green background */
+}
+
+/* Train Name Style */
+.train-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Time and Destination Style */
+.time-destination {
+    font-size: 16px;
+    /* color: #555; */
+    color: whitesmoke;
+}

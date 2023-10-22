@@ -1,0 +1,100 @@
+{
+  "trains": [
+    {
+      "id": 1,
+      "name": "Dhaka Express",
+      "time": "8:00 AM",
+      "destination": "Chittagong"
+    },
+    {
+      "id": 2,
+      "name": "Padma Mail",
+      "time": "7:30 AM",
+      "destination": "Rajshahi"
+    },
+    {
+      "id": 3,
+      "name": "Sundarban Express",
+      "time": "9:15 AM",
+      "destination": "Khulna"
+    },
+    {
+      "id": 4,
+      "name": "Mohanagar Godhuli",
+      "time": "6:45 AM",
+      "destination": "Sylhet"
+    },
+    {
+      "id": 5,
+      "name": "Jamuna Express",
+      "time": "10:00 AM",
+      "destination": "Bogra"
+    },
+    {
+      "id": 6,
+      "name": "Silk City Express",
+      "time": "8:30 AM",
+      "destination": "Rajshahi"
+    },
+    {
+      "id": 7,
+      "name": "Rupsha Express",
+      "time": "11:15 AM",
+      "destination": "Khulna"
+    },
+    {
+      "id": 8,
+      "name": "Turna Express",
+      "time": "7:00 AM",
+      "destination": "Chittagong"
+    },
+    {
+      "id": 9,
+      "name": "Paharika Express",
+      "time": "12:30 PM",
+      "destination": "Sylhet"
+    },
+    {
+      "id": 10,
+      "name": "Lalmoni Express",
+      "time": "9:45 AM",
+      "destination": "Lalmonirhat"
+    },
+    {
+      "id": 11,
+      "name": "Chitra Express",
+      "time": "10:30 AM",
+      "destination": "Khulna"
+    },
+    {
+      "id": 12,
+      "name": "Parabat Express",
+      "time": "7:45 AM",
+      "destination": "Sylhet"
+    },
+    {
+      "id": 13,
+      "name": "Tista Express",
+      "time": "5:30 AM",
+      "destination": "Dewanganj"
+    },
+    {
+      "id": 14,
+      "name": "Meghna Express",
+      "time": "3:20 PM",
+      "destination": "Chittagong"
+    },
+    {
+      "id": 15,
+      "name": "Nilsagar Express",
+      "time": "1:15 PM",
+      "destination": "Nilphamari"
+    },
+    {
+      "id": 16,
+      "name": "Drutojan Express",
+      "time": "8:15 PM",
+      "destination": "Panchagar"
+    }
+  ]
+}

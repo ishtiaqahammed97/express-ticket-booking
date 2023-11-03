@@ -3,7 +3,7 @@ import "./Cart.css";
 // import { Link } from "react-router-dom";
 
 const Cart = (props) => {
-  const { id, From, To, Train, Time, Prise, classes } = props.booked;
+  const { id, from, to, train, time, price, className } = props.booked;
 
   const [order, setOrder] = useState([]);
   // const [user, setUser] = useState({});
@@ -37,12 +37,12 @@ const Cart = (props) => {
   return (
     <div>
       <h5 className="title">
-        Route: {From} - {To}
+        Route: {from} - {to}
       </h5>
-      <h6 className="title">Train: {Train}</h6>
-      <h6 className="detail">Time: {Time}</h6>
-      <h6 className="detail">Price: {Prise}</h6>
-      <h6 className="detail">Class: {classes}</h6>
+      <h6 className="title">Train: {train}</h6>
+      <h6 className="detail">Time: {time}</h6>
+      <h6 className="detail">Price: {price}</h6>
+      <h6 className="detail">Class: {className}</h6>
       <button onClick={handleOrder} className="ticket-btn">
         Place Order
       </button>

@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
@@ -9,6 +8,7 @@ import Journey from "./Components/Journey/Journey";
 import Purchase from "./Components/Purchase/Purchase";
 
 import { createContext, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
 export const UserContext = createContext();
 
@@ -17,29 +17,15 @@ function App() {
 
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <Router>
-        <Navbar></Navbar>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/journey">
-            <Journey></Journey>
-          </Route>
-          <Route path="/purchase">
-            <Purchase></Purchase>
-          </Route>
-          <Route path="/schedule">
-            <Schedule></Schedule>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/admin">
-            <Admin></Admin>
-          </Route>
-        </Switch>
-      </Router>
+      <Navbar></Navbar>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route path="/journey" element={<Journey />}></Route>
+        <Route path="/purchase" element={<Purchase />}></Route>
+        <Route path="/schedule" element={<Schedule />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/admin" element={<Admin />}></Route>
+      </Routes>
     </UserContext.Provider>
   );
 }

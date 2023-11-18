@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 // import cover from "../../assets/railway-background.jpg";
 import search from "../../assets/search.svg";
 import select from "../../assets/select.svg";

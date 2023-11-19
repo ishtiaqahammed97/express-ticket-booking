@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  // get user from local storage
+
+  const loggedIn = JSON.parse(localStorage.getItem("user"));
+
+  let hasUser = !loggedIn ? false : true;
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light top-fixed">
@@ -25,7 +31,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </a>
               <a className="nav-link">
-                <Link to="/login">Login</Link>
+                {hasUser ? "Logout" : <Link to="/login">Login</Link>}
               </a>
               <a className="nav-link">
                 <Link to="/schedule">Train Schedule</Link>

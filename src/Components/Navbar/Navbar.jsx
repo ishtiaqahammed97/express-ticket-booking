@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import handleLogOut from "../Logout/Logout";
 
 const Navbar = () => {
   // get user from local storage
@@ -31,7 +32,11 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </a>
               <a className="nav-link">
-                {hasUser ? "Logout" : <Link to="/login">Login</Link>}
+                {hasUser ? (
+                  <Link onClick={handleLogOut}>Logout</Link>
+                ) : (
+                  <Link to="/login">Login</Link>
+                )}
               </a>
               <a className="nav-link">
                 <Link to="/schedule">Train Schedule</Link>

@@ -6,19 +6,26 @@ import { UserContext } from "../../App";
 
 const Journey = () => {
   const [tickets, setTickets] = useState([]);
-  console.log(tickets);
   const [booked, setBooked] = useState([]);
   const [logMessage, setLogMessage] = useState("");
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  console.log(loggedInUser);
 
   const handleBooking = (selectedTicket) => {
     // console.log(selectedTicket);
     // const bookedTicket = [...booked, selectedTicket];
+
+    // selected ticket
     const bookedTicket = selectedTicket;
+
+    // get user from local storage
     const userJSON = localStorage.getItem("user");
     const user = JSON.parse(userJSON);
-    // console.log(bookedTicket);
+
+    // set ticket id to local storage, so that it can fetch
+    // later in order review page
+    localStorage.setItem("selectedTicket", JSON.stringify(bookedTicket));
+
+    // if user exists and loggedin, set ticket to the state
     if (user.username) {
       // console.log("user ache", bookedTicket);
       setBooked(bookedTicket);

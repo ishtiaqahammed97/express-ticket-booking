@@ -1,0 +1,9 @@
+.review {
+    /* margin-top: 160px; */
+    margin-right: 80px;
+    border: 1px solid green;
+    background: green;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}

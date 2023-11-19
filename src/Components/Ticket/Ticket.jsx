@@ -1,7 +1,7 @@
 import "./Ticket.css";
 
 const Ticket = (props) => {
-  const { id, from, to, train, time, price, className } = props.ticket;
+  const { from, to, train, time, price, className } = props.ticket;
   // console.log(Prise);
   const handleBooking = props.handleBooking;
 

@@ -9,6 +9,7 @@ import Purchase from "./Components/Purchase/Purchase";
 
 import { createContext, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import OrderReview from "./Components/OrderReview/OrderReview";
 
 export const UserContext = createContext();
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route path="/journey" element={<Journey />}></Route>
+        <Route path="/journey/order-review" element={<OrderReview />}></Route>
         <Route path="/purchase" element={<Purchase />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
         <Route path="/login" element={<Login />}></Route>
